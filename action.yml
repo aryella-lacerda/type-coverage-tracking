@@ -1,13 +1,82 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: "Type Coverage Tracking"
+description: "This action determines what your project's Typescript type coverage is and automates the steps necessary to track it over time."
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
-    required: true
-    default: '1000'
+  atLeast:
+    description: "number of milliseconds to wait"
+    required: false
+  is:
+    description: "number of milliseconds to wait"
+    required: false
+  cache:
+    description: "number of milliseconds to wait"
+    required: false
+  debug:
+    description: "number of milliseconds to wait"
+    required: false
+  detail:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreCatch:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreFiles:
+    description: "number of milliseconds to wait"
+    required: false
+  project:
+    description: "number of milliseconds to wait"
+    required: false
+  strict:
+    description: "number of milliseconds to wait"
+    required: false
+  suppressError:
+    description: "number of milliseconds to wait"
+    required: false
+  update:
+    description: "number of milliseconds to wait"
+    required: false
+  updateIfHigher:
+    description: "number of milliseconds to wait"
+    required: false
+    default: "true"
+  ignoreUnread:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreNested:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreAsAssertion:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreTypeAssertion:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreNonNullAssertion:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreObject:
+    description: "number of milliseconds to wait"
+    required: false
+  ignoreEmptyType:
+    description: "number of milliseconds to wait"
+    required: false
+  showRelativePath:
+    description: "number of milliseconds to wait"
+    required: false
+  historyFile:
+    description: "number of milliseconds to wait"
+    required: false
+  noDetailWhenFailed:
+    description: "number of milliseconds to wait"
+    required: false
+  reportSemanticError:
+    description: "number of milliseconds to wait"
+    required: false
+  cacheDirectory:
+    description: "number of milliseconds to wait"
+    required: false
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  coverage: # output will be available to future steps
+    description: "The project's current type coverage"
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
